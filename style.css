@@ -43,8 +43,9 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-bold-webfont.woff2') format('woff2'),
          url('opensans-bold-webfont.woff') format('woff');
     font-weight: 700;
@@ -56,7 +57,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-bolditalic-webfont.woff2') format('woff2'),
          url('opensans-bolditalic-webfont.woff') format('woff');
     font-weight: 700;
@@ -68,7 +69,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-extrabold-webfont.woff2') format('woff2'),
          url('opensans-extrabold-webfont.woff') format('woff');
     font-weight: 900;
@@ -80,7 +81,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-extrabolditalic-webfont.woff2') format('woff2'),
          url('opensans-extrabolditalic-webfont.woff') format('woff');
     font-weight: 900;
@@ -92,7 +93,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-italic-webfont.woff2') format('woff2'),
          url('opensans-italic-webfont.woff') format('woff');
     font-weight: 400;
@@ -104,7 +105,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-light-webfont.woff2') format('woff2'),
          url('opensans-light-webfont.woff') format('woff');
     font-weight: lighter;
@@ -116,7 +117,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-lightitalic-webfont.woff2') format('woff2'),
          url('opensans-lightitalic-webfont.woff') format('woff');
     font-weight: lighter;
@@ -128,7 +129,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-regular-webfont.woff2') format('woff2'),
          url('opensans-regular-webfont.woff') format('woff');
     font-weight: 400;
@@ -140,7 +141,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-semibold-webfont.woff2') format('woff2'),
          url('opensans-semibold-webfont.woff') format('woff');
     font-weight: 600;
@@ -152,7 +153,7 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: 'open_sans';
     src: url('opensans-semibolditalic-webfont.woff2') format('woff2'),
          url('opensans-semibolditalic-webfont.woff') format('woff');
     font-weight: 600;
@@ -164,13 +165,14 @@ header, footer {
 
 
 @font-face {
-    font-family: "Afacad Flux", sans-serif;
-    src: url('sans_font/sansserif-webfont.woff2') format('woff2'),
-         url('sans_font/sansserif-webfont.woff') format('woff');
+    font-family: 'droid_serif';
+    src: url('Droid_font/droidserif-webfont.woff2') format('woff2'),
+         url('Droid_font/droidserif-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 
 
 a[href*= "http"]{
