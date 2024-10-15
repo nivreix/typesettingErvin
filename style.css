@@ -70,7 +70,7 @@ h2 {
 }
 
 section h2 + p {
-  text-indent: 20px;
+  text-indent: 1.25rem;
 }
 
 p, li {
