@@ -44,9 +44,119 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@font-face {
+  font-family: 'bree_serifregular';
+  src: url('fonts/breeserif-regular-webfont.woff2') format('woff2'),
+       url('fonts/breeserif-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-html{
-  font-size:0.625rem;
-  font-family: "Afacad Flux", serif;
+@font-face {
+  font-family: 'alfa_slab_oneregular';
+  src: url('fonts/alfaslabone-regular-webfont.woff2') format('woff2'),
+       url('fonts/alfaslabone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'bree_serifregular';
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+
+h1, h2 {
+  font-family: 'alfa_slab_oneregular';
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+/* Used paletton.com for colors. Palette URL: http://paletton.com/#uid=4000u0kcOll3lnk7ylYjclvr8mE */
+
+a {
+  color: #AB4444;
+  outline: none;
+}
+
+a[href*="http"] {
+  background: url('external-link-52.png') no-repeat 100%;
+  background-size: 1rem;
+  background-position: bottom 0.5rem right;
+  padding-right: 1.2rem;
+}
+
+a:hover,
+a:focus {
+  color: #296767;
+  text-decoration: none;
+}
+
+a:active {
+  background: #296767;
+  color: white;
+  text-decoration: none;
+}
+
+li, p {
+  line-height: 1.5;
+}
+ul, p {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+ul {
+  list-style-type: square;
+}
+ul li::marker {
+  color: #296767;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #AB4444;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #296767;
+  border: 1px solid #296767;
+}
+
+nav a:active {
+  background: #296767;
+  color: white;
+  border: 1px solid #296767;
 }
