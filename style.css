@@ -43,39 +43,37 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-/*@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 body{
-  /* font-family: "Merriweather Sans", sans-serif;*/
+  font-family: "Merriweather Sans", sans-serif;
   font-family: "Alata", sans-serif;
 }
 
-/* typography stuff */
-
 html {
-   /*font-family: "Merriweather Sans", sans-serif;*/
+  font-family: "Merriweather Sans", sans-serif;
   font-family: "Alata", sans-serif;
   font-size: 10px;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
 }
 
 h1, h2 {
- /* font-family: "Merriweather Sans", sans-serif;*/
   font-family: "Alata", sans-serif;
   letter-spacing: 2px;
 }
 
 h1 {
-  /* font-family: "Merriweather Sans", sans-serif;*/
+
   font-size: 5rem;
   text-align: center;
 }
 
 h2 {
-  font-family: "Alata", sans-serif;
   font-size: 3.2rem;
 }
 
-section h2 + p {
+section h2, p {
   text-indent: 1.25rem;
 }
 
