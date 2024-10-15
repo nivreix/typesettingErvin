@@ -47,12 +47,14 @@ header, footer {
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 body{
    font-family: "Merriweather Sans", sans-serif;
+  font-family: "Alata", sans-serif;
 }
 
 /* typography stuff */
 
 html {
    font-family: "Merriweather Sans", sans-serif;
+  font-family: "Alata", sans-serif;
   font-size: 10px;
 }
 
