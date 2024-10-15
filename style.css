@@ -44,119 +44,162 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
-@font-face {
-  font-family: 'bree_serifregular';
-  src: url('fonts/breeserif-regular-webfont.woff2') format('woff2'),
-       url('fonts/breeserif-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+ @font-face {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'PT Serif', serif;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap');
+  }
 
-@font-face {
-  font-family: 'alfa_slab_oneregular';
-  src: url('fonts/alfaslabone-regular-webfont.woff2') format('woff2'),
-       url('fonts/alfaslabone-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+  body{
+      font-family: 'Hind Madurai', sans-serif;
+  }
 
-html {
-  font-size: 10px;
-}
+  /*
+  ** General text styling: **
+  */
 
-body {
-  font-family: 'bree_serifregular';
-  font-size: 1.6rem;
-  letter-spacing: 0.05em;
-  word-spacing: 0.1em;
-}
+  /*
+  ** Give the page a site-wide font-size of 10px
+  ** Give your body text some letter-spacing and word-spacing, as appropriate.
+  */
+  html{
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      word-spacing: 0.5px;
+  }
+  /*    
+  ** Give your headings and other element types 
+    appropriate font-sizes defined using a suitable relative unit.
+  ** Give your headings a little bit of letter-spacing 
+    to make them not too squashed, and allow the letters to breathe a bit.
+  */
+  h1, h2 {
+      letter-spacing: 0.25rem;
+      font-family: 'EB Garamond', serif;
+  }
+  h1{
+      font-size: 5rem;
+  }
 
-h1, h2 {
-  font-family: 'alfa_slab_oneregular';
-  font-weight: 100;
-}
+  h2{
+      font-size: 4rem;
+  }
+  p, li {
+      font-size: 2rem;
+  }
 
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
+  /*
+  ** Give your body text a suitable line-height.
+  */
+  body{
+    line-height: 1.6;
+  }
 
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: 0.05em;
-}
+  /*
+  ** Center your top level heading on the page.
+  */
+  header{
+      text-align: center;
+  }
 
-section h2 + p {
-  text-indent: 2rem;
-}
+  /*
+  ** Give the first paragraph after each heading 
+  in the <section> a little bit of text-indentation, say 20px
+  */
 
-/* Used paletton.com for colors. Palette URL: http://paletton.com/#uid=4000u0kcOll3lnk7ylYjclvr8mE */
+  section h1 + p, section h2 + p{
+      text-indent: 20px;
+  }
 
-a {
-  color: #AB4444;
-  outline: none;
-}
+  /** Links: **/
 
-a[href*="http"] {
-  background: url('external-link-52.png') no-repeat 100%;
-  background-size: 1rem;
-  background-position: bottom 0.5rem right;
-  padding-right: 1.2rem;
-}
+  /*
+  * Give the link, visited, focus, and hover states 
+  some colors that go with the color of the 
+  horizontal bars at the top and bottom of the page.
+  * Make it so that links are underlined by default, 
+  but when you hover or focus them the underline disappears.
+  * Remove the default focus outline from ALL the links on the page.
+  * Give the active state a noticeably different styling so it stands out nicely, 
+  but make it still fit in with the overall page design.
+  * Make it so that external links have the 
+  external link icon inserted next to them.
+  */
 
-a:hover,
-a:focus {
-  color: #296767;
-  text-decoration: none;
-}
+  a:link{
+    color: rgb(12, 102, 105);
+  }
+  a:visited{
+    color: rgb(90, 52, 52);
+  }
+  a:focus{
+    color: rgb(99, 75, 23);
+    text-decoration: none;
+    outline: none;
+  }
+  a:hover{
+    color: rgb(126, 133, 34);
+    text-decoration: none;
+  }
+  
+  a:active{
+      background-color: rgb(133, 51, 51);
+      color:rgb(170, 134, 134);
+      outline: initial;
+  }
 
-a:active {
-  background: #296767;
-  color: white;
-  text-decoration: none;
-}
+  a[href*="http"] {
+    background-image: url("../images/icon.png");
+    background-position: right;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    padding-right: 15px;
+  }
 
-li, p {
-  line-height: 1.5;
-}
-ul, p {
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
-}
-ul {
-  list-style-type: square;
-}
-ul li::marker {
-  color: #296767;
-}
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+  /** Lists: **/
 
-nav li {
-  text-align: center;
-  margin-bottom: 1rem;
-}
+  /*
+  * Make sure the spacing of your lists and list items works well with the
+   styling of the overall page. 
+   Each list item should have the same line-height as a paragraph line, 
+   and each list should have the same spacing at its top and bottom 
+   as you have between paragraphs.
 
-nav a {
-  display: block;
-  padding: 1rem;
-  border: 1px solid #AB4444;
-  text-decoration: none;
-  font-size: 2rem;
-}
+  * Give your list items a nice bullet appropriate for the design of the page. 
+  It is up to you whether you choose a custom bullet image or something else.
+  */
 
-nav a:hover,
-nav a:focus {
-  color: #296767;
-  border: 1px solid #296767;
-}
+  li {
+      list-style: square;
+  }
 
-nav a:active {
-  background: #296767;
-  color: white;
-  border: 1px solid #296767;
-}
+  /** Navigation menu: **/
+
+  /*
+    Style your navigation menu so that it harmonizes with the page.
+  */
+  nav {
+      background-color: rgb(218, 187, 187);
+      height: 100%;
+      font-family: 'PT Serif', serif;
+      margin: 0;
+      padding: 0;
+  }
+  nav ul{
+      text-align: center;
+      padding: 0;
+  }
+  nav ul li{
+      list-style: none;
+      text-transform: uppercase;
+      
+  }
+
+  nav ul a {
+      text-decoration: none;
+      display: block;
+      padding: 35px;
+      font-size: 2.4rem;
+  }
