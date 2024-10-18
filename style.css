@@ -92,7 +92,6 @@ p, li {
   word-spacing: 3px;
 }
 
-/* Link styling */
 
 a {
   outline: none;
@@ -120,8 +119,6 @@ a:active {
                0px 0px 4px black;
 }
 
-/* lists: extra margin top and bottom to make it
-always have the same spacing as with paragraphs */
 
 ul, ol {
   margin: 1.6rem 0;
@@ -135,19 +132,18 @@ ol {
   list-style-type: lower-latin;
 }
 
-/* nav menu */
 
-nav ul {
+button ul {
   padding-left: 0;
   margin-top: 0.8rem;
 }
 
-nav li {
+button li {
   list-style-type: none;
   margin-bottom: 2rem;
 }
 
-nav li a {
+button li a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
@@ -157,12 +153,12 @@ nav li a {
   border: 1px solid #a66;
 }
 
-nav li a:focus, nav li a:hover {
+button li a:focus, nav li a:hover {
   color: white;
   background: #a66;
 }
 
-nav li a:active {
+button li a:active {
   color: white;
   background: black;
 }
