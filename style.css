@@ -133,17 +133,17 @@ ol {
 }
 
 
-button ul {
+nav ul {
   padding-left: 0;
   margin-top: 0.8rem;
 }
 
-button li {
+nav li {
   list-style-type: none;
   margin-bottom: 2rem;
 }
 
-button li a {
+nav li a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
@@ -153,12 +153,12 @@ button li a {
   border: 1px solid #a66;
 }
 
-button li a:focus, nav li a:hover {
+nav li a:focus, nav li a:hover {
   color: white;
   background: #a66;
 }
 
-button li a:active {
+nav li a:active {
   color: white;
   background: black;
 }
