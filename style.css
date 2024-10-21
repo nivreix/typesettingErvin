@@ -92,6 +92,7 @@ p, li {
   word-spacing: 3px;
 }
 
+/* Link styling */
 
 a {
   outline: none;
@@ -119,6 +120,8 @@ a:active {
                0px 0px 4px black;
 }
 
+/* lists: extra margin top and bottom to make it
+always have the same spacing as with paragraphs */
 
 ul, ol {
   margin: 1.6rem 0;
@@ -132,44 +135,34 @@ ol {
   list-style-type: lower-latin;
 }
 
+/* nav menu */
 
-nav{
-     padding-left:0;    
-  
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
 }
 
-nav a {
-     text-decoration: none;
-     outline: none;
-    }
-
-nav ul{
-    padding: 0;
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
 }
 
-
-nav ul li {
-    list-style-type: none;
-
-}
-
-
-nav ul li a{
-    display: inline-block;
-    font-family: 'open sans', sans-serif;
-    list-style-type: none;
-    line-height: 4em;
-    width:100%;
-    border: 1.2px solid #BA7530;
-    border-radius: 3px;
-    text-align: center;           
-    margin-top: 1em;
-}
-
-
- nav #navMenu a:hover,nav #navMenu a:focus {
+nav li a {
   text-decoration: none;
-  background-color:#BA7530;
-  color: white;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #a66;
 }
- 
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
+}
