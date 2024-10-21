@@ -162,3 +162,22 @@ nav li a:active {
   color: white;
   background: black;
 }
+nav ul li a{
+    display: inline-block;
+    font-family: 'open sans', sans-serif;
+    list-style-type: none;
+    line-height: 4em;
+    width:100%;
+    border: 1.2px solid #BA7530;
+    border-radius: 3px;
+    text-align: center;           
+    margin-top: 1em;
+}
+
+
+ nav #navMenu a:hover,nav #navMenu a:focus {
+  text-decoration: none;
+  background-color:#BA7530;
+  color: white;
+}
+ 
